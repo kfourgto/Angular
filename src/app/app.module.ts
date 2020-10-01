@@ -4,6 +4,7 @@ import { NgModule } from "@angular/core";
 import { BaiTapLayoutModule } from "./bai-tap-layout/bai-tap-layout.module";
 
 import { AppComponent } from "./app.component";
+import { DemoDirectiveModule } from "./demo-directive/demo-directive.module";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AppComponent } from "./app.component";
   ],
   imports: [
     BrowserModule,
-    BaiTapLayoutModule, // Nơi để import các module khác vào module này
+    BaiTapLayoutModule,
+    DemoDirectiveModule, // Nơi để import các module khác vào module này
   ],
   providers: [],
   bootstrap: [AppComponent], //Nơi chứa component sử dụng trong index.html
