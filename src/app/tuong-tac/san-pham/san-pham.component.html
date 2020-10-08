@@ -1,0 +1,15 @@
+<div class="card text-white bg-dark">
+  <img class="card-img-top" [src]="sanPham.hinhAnh" alt="" />
+  <div class="card-body">
+    <h4 class="card-title">{{ sanPham.ten }}</h4>
+    <p class="card-text">{{ sanPham.gia.toLocaleString() }}</p>
+    <button
+      data-toggle="modal"
+      data-target="#modelId"
+      class="btn btn-success"
+      (click)="xemChiTiet(sanPham)"
+    >
+      Xem chi tiet
+    </button>
+  </div>
+</div>

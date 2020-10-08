@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="form-group">
+    <h3>Ma Sp</h3>
+    <input #maSp class="form-control" />
+  </div>
+  <div class="form-group">
+    <h3>Ten Sp</h3>
+    <input #tenSp class="form-control" />
+  </div>
+  <div class="form-group">
+    <h3>Gia Sp</h3>
+    <input #giaSp class="form-control" />
+  </div>
+  <div class="form-group">
+    <button
+      class="btn btn-success"
+      (click)="
+        themSanPham({
+          ma: maSp.value,
+          ten: tenSp.value,
+          gia: giaSp.value
+        })
+      "
+    >
+      Them san pham
+    </button>
+  </div>
+  <app-danh-sach-san-pham #tagDSSP></app-danh-sach-san-pham>
+</div>

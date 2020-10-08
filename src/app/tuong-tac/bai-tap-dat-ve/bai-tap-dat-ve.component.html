@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="display-4 pl-5">DAT VE</h1>
+  <div class="row">
+    <div class="col-3">
+      <p class="text-center">Tai xe</p>
+      <div class="row">
+        <div class="col-3" *ngFor="let ghe of mangGhe">
+          <app-ve
+            [gheInput]="ghe"
+            (gheDuocDat)="themGheDuocDat($event)"
+          ></app-ve>
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <h3>Danh sach ghe dc dat</h3>
+      <p>Tong tien: {{ tongTien }}$</p>
+      <p *ngFor="let ghe of danhSachGheDaDat">
+        Ghe: {{ ghe.SoGhe }} - Gia: {{ ghe.Gia }}$
+        <a
+          (click)="huyGhe(ghe)"
+          class="txtHuy"
+          style="color: red; cursor: pointer"
+          >[Huy]</a
+        >
+      </p>
+    </div>
+  </div>
+</div>

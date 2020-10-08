@@ -1,0 +1,11 @@
+<button
+  [ngClass]="{
+    'btn-danger': gheInput.TrangThai,
+    'btn-success': dangDat
+  }"
+  class="btn-secondary w-100 my-2"
+  (click)="datVe(gheInput)"
+  [disabled]="gheInput.TrangThai"
+>
+  {{ gheInput.SoGhe }}
+</button>

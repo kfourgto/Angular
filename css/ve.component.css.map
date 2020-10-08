@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/tuong-tac/ve/ve.component.scss"
+    ],
+    "names": [],
+    "file": "ve.component.css"
+}

@@ -5,6 +5,9 @@ import { BaiTapLayoutModule } from "./bai-tap-layout/bai-tap-layout.module";
 
 import { AppComponent } from "./app.component";
 import { DemoDirectiveModule } from "./demo-directive/demo-directive.module";
+import { TuongTacModule } from "./tuong-tac/tuong-tac.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MaterialModule } from "./material/material.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +17,11 @@ import { DemoDirectiveModule } from "./demo-directive/demo-directive.module";
   imports: [
     BrowserModule,
     BaiTapLayoutModule,
-    DemoDirectiveModule, // Nơi để import các module khác vào module này
+    DemoDirectiveModule,
+    TuongTacModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    // Nơi để import các module khác vào module này
   ],
   providers: [],
   bootstrap: [AppComponent], //Nơi chứa component sử dụng trong index.html
